@@ -676,7 +676,7 @@ th, td {
     justify-content: center;
     text-align: center;
     /* 화면 높이에 맞춰 중앙 정렬 */
-    height: 80vh; 
+    height: 60vh; 
     padding: 20px;
 }
 
@@ -773,5 +773,6 @@ th, td {
 
 /* 터치 영역이 캔버스 크기보다 작을 때를 대비해, 캔버스와 컨트롤 영역 전체를 감싸는 컨테이너 스타일 조정 */
 /* #game-container에 대한 스타일링이 되어있어야 합니다. */
+
 
 
