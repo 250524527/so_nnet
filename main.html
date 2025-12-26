@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINTER PROJECT 👽</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body id="start">
+    <div class="terminal-container">
+        <div class="terminal-header">WYMM>_ WINTER PROJECT.EXE 👽</div>
+        
+        <div class="terminal-body start-screen">
+            <h1 class="start-title">[ CHARACTER SELECTION ]</h1>
+
+            <div class="character-selection">
+                <div class="character-card" id="turtle">
+                    <div class="character-icon">🐢</div> 
+                    <div class="character-name">--- G.BANG.E ---</div>
+                    <p class="description">| Balanced (STR/DEF) |</p>
+                    <p class="description">|  Suitable for new  |</p>
+                </div>
+
+                <div class="character-card" id="startButton">
+                    <div class="character-icon">🐧</div>
+                    <div class="character-name">--- PENG.E. ---</div>
+                    <p class="description">| High (DEX/SPD) Stat |</p>
+                    <p class="description">|  Fast & Cute  |</p>
+                </div>
+            </div>
+
+            <div class="footer-message">
+                > Press SPACE to Confirm Selection.
+            </div>
+            
+            <p class="start-footer">Loading OS... 100% Complete</p>
+        </div>
+        
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const startButton = document.getElementById('startButton');
+            
+            if (startButton) {
+                startButton.addEventListener('click', () => {
+                    // 첫 번째 스토리 페이지(예: page1.html)로 이동
+                    window.location.href = 'game.html'; 
+                });
+
+                // Enter 키로도 시작할 수 있도록 추가
+                document.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        window.location.href = 'game.html';
+                    }
+                });
+            }
+            document.getElementById('turtle').addEventListener('click', () => {
+                alert('거북이는 느리지요!');
+            });
+            
+        });
+    </script>
+</body>
+</html>
