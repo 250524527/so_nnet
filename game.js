@@ -188,7 +188,7 @@ function checkCherryCollision() {
             cherry.visible = false;
             
             alert("🍀 네잎클로버를 획득하였습니다! 다른 차원으로 이동합니다.");
-            window.location.href = "index.html";
+            window.location.href = "page1.html";
         }
     }
 }
@@ -251,3 +251,4 @@ function resetGamePositions() {
 resetGamePositions();
 
 gameLoop();
+
