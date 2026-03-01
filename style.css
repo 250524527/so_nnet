@@ -329,7 +329,6 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Courier New', monospace;
 }
 
 .declassify-status {
@@ -808,3 +807,4 @@ header {
     50% { transform: translateX(0); }
     100% { transform: translateX(100%); }
 }
+
