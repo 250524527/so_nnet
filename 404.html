@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINTER PROJECT 👽</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="iphone-container error-bg">
+        <div class="error-content">
+            <h1 class="glitch-text" data-text="404 ERROR">404 ERROR</h1>
+            <p class="error-msg">통신 두절: 허가되지 않은 구역입니다.</p>
+            <div class="radar-scan"></div>
+            <div class="error-actions">
+                <button onclick="location.href='index.html'" class="btn-back">기지로 복귀</button>
+                <button onclick="clearAndExit()" class="btn-wipe">기록 파기 후 탈출</button>
+            </div>
+        </div>
+    </div>
+        
+    <script>
+        function clearAndExit() {
+            if (confirm("🚨 경고: 모든 탐사 기록과 암호를 파기하시겠습니까? 이 작업은 즉시 실행됩니다.")) {
+                localStorage.clear();
+                sessionStorage.clear();
+                alert("모든 데이터가 소거되었습니다. 👽");
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+
+
+</body>
+</html>
