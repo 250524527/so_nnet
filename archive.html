@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINTER PROJECT 👽</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body id="quiz-page-identifier" data-quiz-id="archive">
+    <div class="iphone-container">
+        <header>
+            <div class="post-header-info">
+                <button type="button" class="head-btn" onclick="history.back()">◀</button>
+                <span class="category-tag">자료실</span>
+                <button type="button" class="head-btn" onclick="location.href='../main.html'">🏠</button>
+            </div>
+        </header>
+
+        <main class="post-container">
+            <ul class="mission-list">
+                <li class="mission-item unlocked" onclick="location.href='code1.html'">
+                    <span class="m-num">01.</span>
+                    <span class="m-title">CODE 1</span>
+                    <span class="m-status">🔓</span>
+                </li>
+
+                <li id="mission-item-code2" class="mission-item locked">
+                    <span class="m-num">02.</span>
+                    <span class="m-title">CODE 2</span>
+                    <span class="m-status">🔒</span>
+                </li>
+
+                <li id="mission-item-code3" class="mission-item locked">
+                    <span class="m-num">03.</span>
+                    <span class="m-title">CODE 3 : BXtXeX-XlX ♬</span>
+                    <span class="m-status">🔒</span>
+                </li>
+
+                <li id="mission-item-code4" class="mission-item locked">
+                    <span class="m-num">04.</span>
+                    <span class="m-title">CODE 4 : 나비의 방</span>
+                    <span class="m-status">🔒</span>
+                </li>
+
+                <li id="mission-item-code5" class="mission-item locked">
+                    <span class="m-num">05.</span>
+                    <span class="m-title">CODE 5 : 선택의 방</span>
+                    <span class="m-status">🔒</span>
+                </li>
+
+                <li id="mission-item-code6" class="mission-item locked">
+                    <span class="m-num">06.</span>
+                    <span class="m-title">CODE 6 : 기억의 방</span>
+                    <span class="m-status">🔒</span>
+                </li>
+
+                <li id="mission-item-code7" class="mission-item locked">
+                    <span class="m-num">07.</span>
+                    <span class="m-title">CODE 7 : ?</span>
+                    <span class="m-status">🔒</span>
+                </li>
+
+            </ul>
+
+
+        </main>
+
+        <div id="declassifyOverlay" class="declassify-overlay">
+            <div class="declassify-content">
+                <div class="scanner-line"></div>
+                <h2 class="declassify-status">기밀 해제 중...</h2>
+                <div class="declassify-progress">
+                    <div id="progressBar" class="progress-fill"></div>
+                </div>
+                <p class="declassify-log">데이터 복구 중입니다...</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+<script src="/script.js"></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINTER PROJECT 👽</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="iphone-container">
+    <header>
+        <div class="header-top">
+            <h1 class="main-logo">WINTER PROJECT</h1>
+        </div>
+        <div class="top-info">
+            <span class="label-top">TOP :</span>
+            <span class="menu-text modal-trigger" data-target="helpModal">💬 친절한 도움말</span>
+        </div>
+    </header>
+
+
+    <main>
+        <section>
+            <h3 class="section-title">기본메뉴</h3>
+            <ul class="menu-list">
+                <li class="menu-item" data-link="notice">
+                    <a href="/notice.html" class="menu-link">
+                        <span class="menu-num">01.</span> <span class="menu-text">공지사항</span>
+                    </a>
+                </li>
+                <li class="menu-item" data-link="project">
+                    <a href="/project.html" class="menu-link">
+                        <span class="menu-num">02.</span> <span class="menu-text">외계인 탐사 계획</span>
+                    </a>
+                </li>
+                <li class="menu-item" data-link="archive" onclick="handleArchiveClick()">
+                    <span class="menu-num">03.</span> <span class="menu-text">자료실</span>
+                    <span id="archiveStatus" class="status-badge"></span>
+                </li>
+            </ul>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="ship-icon">👽</div><br>
+        <div class="developer-signature">
+            <span id="devText">/* #F12_ENCRYPTED_AUTHOR_INFO_SIGNAL */</span>
+        </div>
+    </footer>
+
+    <div id="helpModal" class="modal-overlay">
+        <div class="modal-content">
+            <h2 class="modal-title">[ 게시판 가이드 ]</h2>
+            
+            <div class="modal-body">
+                <p>02. 외계인 탐사 계획<br>
+                    <span class="modal-comment">이 프로젝트는 겨울 한정 외계인 탐사 계획입니다. 
+                        탐사와 관련된 행동수칙, 주의사항 등을 확인할 수 있습니다.</span>
+                </p>
+                <p>03. 자료실<br>
+                    <span class="modal-comment">운영자의 1급 기밀자료를 확인할 수 있습니다.</span>
+                </p>
+
+            </div>
+            <span class="close-btn">&times;</span>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>

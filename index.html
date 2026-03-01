@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINTER PROJECT 👽</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="iphone-container intro-bg">
+        <div class="intro-content" onclick="startSystem()">
+            <div class="signal-icon">📡</div>
+            <h1 class="intro-title">UNKNOWN SIGNAL DETECTED</h1>
+            <p class="intro-subtitle">TAP TO DECODE & ACCESS</p>
+            
+            <div class="loading-bar">
+                <div class="loading-fill"></div>
+            </div>
+            
+            <span class="system-status">ENCRYPTED_CONNECTION: ACTIVE</span>
+        </div>
+        <div class="scanline"></div>
+    </div>
+
+    <script>
+        /* 첫 화면 */
+        function startSystem() {
+            const title = document.querySelector('.intro-title');
+            const subtitle = document.querySelector('.intro-subtitle');
+            
+            // 1. 텍스트 변경 (접속 중...)
+            title.innerText = "ACCESS GRANTED";
+            title.style.color = "#fff";
+            subtitle.innerText = "ESTABLISHING SECURE LINE...";
+            
+            // 2. 약간의 지연 시간 후 메인 페이지로 이동
+            setTimeout(() => {
+                // 메인 메뉴가 있는 페이지 이름으로 설정
+                window.location.href = "main.html"; 
+            }, 1500); // 1.5초 뒤 이동
+        }
+    </script>
+
+
+</body>
+</html>
