@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.clear();
                 sessionStorage.clear();
                 // 홈으로 즉시 이동
-                window.location.href = "/index.html";
+                window.location.href = "index.html";
             }
         });
     }
@@ -237,4 +237,5 @@ document.addEventListener('DOMContentLoaded', () => {
     
 
     
+
 });
